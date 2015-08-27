@@ -5,7 +5,6 @@ int main (){
 
 int fahrenheit;
 float celsius;
-float water;
 
   cout << "What is the temperature in Fahrenheit? ";
   cin >> fahrenheit;
