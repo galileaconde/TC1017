@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main (){
+
+int fahrenheit;
+float celsius;
+float water;
+
+  cout << "What is the temperature in Fahrenheit? ";
+  cin >> fahrenheit;
+
+  celsius= (5*(fahrenheit-32))/9;
+
+  cout << "A temperature of " << fahrenheit << " degrees Fahrenheit is " << celsius << " in Celsius" << endl;
+
+  if(celsius<100)
+  {
+    cout << "Water does not boil at this temperature (under typical conditions)." << endl;
+  }
+      else
+      {
+        cout << "Water does boil at this temperature (under typical conditions)." << endl;
+      }
+
+      return 0;
+  }
