@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+int sum (int num1, int num2){
+  return num1 + num2;
+}
+
+int difference (int num1, int num2){
+  return num1 - num2;
+}
+
+int product (int num1, int num2){
+  return num1 * num2;
+}
+
+int remainder (int num1, int num2){
+  return num1 % num2;
+}
+
+int division (int num1, int num2){
+  return num1 / num2;
+}
+
+int main (){
+
+int num1;
+int num2;
+
+  cout << "Number 1: ";
+  cin >> num1;
+
+  cout << "Number 2: ";
+  cin >> num2;
+
+  cout << "Sum: " << sum (num1, num2) << endl;
+  cout << "Difference: " << difference (num1, num2) << endl;
+  cout << "Product: " << product (num1, num2) << endl;
+  cout << "Division: " << division (num1, num2) << endl;
+  cout << "Remainder: " << remainder (num1, num2) << endl;
+
+return 0;
+}
