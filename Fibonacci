@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int fibo(int n)
+{
+	int result, fibo2 = 1, fibo = 0;
+	if (n < 2)
+	result = n;
+	else
+		{
+			for (int i=1; i<n; i++){
+				result = fibo + fibo2;
+				fibo = fibo2;
+				fibo2 = result;
+		}
+	}
+return result;
+}
+
+int main(){
+
+	int n;
+	cout << "Give me the position in the Fibonacci serie: "<< endl;
+		cin >> n;
+
+	cout << "The Fibonacci number of " << n << " is " << fibo(n) << endl;
+
+return 0;
+
+}
