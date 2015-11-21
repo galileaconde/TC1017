@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+float babylonian(int n){
+  float a,b,c,d;
+
+  for(int i=1;c<n;i++){
+    c=i*i;
+    d=i-1;
+  }
+
+  for(int i=1;i<10;i++){
+    a=n/d;
+    b=d+(a-d)/2;
+    d=b;
+  }
+  return b;
+}
+
+int main(){
+  int n;
+  cout << "Number: ";
+  cin >> n;
+
+  cout << "The square root is: " << babylonian(n) << endl;
+  return 0;
+}
